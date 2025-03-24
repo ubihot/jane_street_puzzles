@@ -247,7 +247,7 @@ if __name__ == "__main__":
           print(f"---searching perms of the compaction {combination}")
           # for each combination, generate the permutations
           combination_permutations = get_combination_permutations(combination)
-          #print(f"combination/compactions={combination} has these permutations {combination_permutations}")
+          print(f"---combination/compactions={combination} has these permutations {combination_permutations}")
           # for each perm of the combination check if it gets to the solution
           for perm in combination_permutations:
             print(f"-------searching for solutions of perm={perm}")

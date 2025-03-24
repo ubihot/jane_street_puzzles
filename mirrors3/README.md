@@ -6,9 +6,10 @@ DONE:
 
 
 TODO:
+- create a tree or a graph with the solution/s, if unique solution mark the path as solid, if not unique solution then it's fine, question is do we keep the graphs of the possible solutions or we change the matrix to allow potential two options for the mirror??? first do the simple solution.
+- for all the permutations, check if you can create the mirrors, if so mark the path as a possible solution or if there's only one path, mark it as a "solid" solution. Search in all the comb's perms. Make this fast.
 - faster prime factorization, the current one is a naive implementation
 - no cheat permutations implementation
-- for all the permutations, check if you can create the mirrors, if so mark the path as a possible solution or if there's only one path, mark it as a "solid" solution. Search in all the comb's perms. Make this fast.
 - write tests for the utils functions
 - function to find adjacent orthogonal cells
 - in the perms, we need to have perms (permutations), without the 1 or with the one after each number.

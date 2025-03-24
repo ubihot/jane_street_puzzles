@@ -76,7 +76,10 @@ def get_prime_factor_combinations(prime_factors:tuple[int, ...]) -> list[list[in
 def get_combination_permutations(combination:list[int]) -> list[tuple[int]]:
   # assert 
   # TODO do not cheat and remove duplicates in our own implementation
-  return list(permutations(combination, len(combination)))
+  perms = list(permutations(combination, len(combination)))
+  #print(f"get_combination_permutations perms={perms}")
+  #print(f"get_combination_permutations unique={set(perms)}")
+  return list(set(perms))
 
 
 if __name__ == "__main__":
