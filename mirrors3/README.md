@@ -17,3 +17,4 @@ TODO:
 - once found the mirrors compute the `unlabeled` laser values (easy part)
 - compute the product of the perimiter's side' sum (easiest part)
 - have a nice visualization of the algorithm running and a nice visual the final mirrors in the grid (maybe serialize the solution and give it to a js renderer to display it beautifully or even in python maybe)
+- create the grid from a input file
