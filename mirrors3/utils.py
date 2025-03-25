@@ -70,7 +70,15 @@ def get_prime_factor_combinations(prime_factors:tuple[int, ...]) -> list[list[in
           f += 1
         #print(f"all_combs={all_combs_found}")
       s = s + 1
-  return list(all_combs_found)
+  all_combs_found = list(all_combs_found)
+  # for each compaction add 3 extra compactions, I don't think we need to add a 1 in the middle
+  # wow super recursive bug introduced here
+  for i in range(len(all_combs_found)):
+    comb = all_combs_found[i]
+    all_combs_found.append(tuple([1]) + comb)
+    all_combs_found.append(tuple([1]) + comb + tuple([1]))
+    all_combs_found.append(comb + tuple([1]))
+  return all_combs_found
 
 # e.g. input is [2,2,3] -> output is [[2,2,3], [2, 3, 2], [3, 2, 2]] since we'll store these in a set which will remove the duplicates
 def get_combination_permutations(combination:list[int]) -> list[tuple[int]]:
