@@ -1,2 +1,5 @@
 __pycache/
 *.pyc
+mirrors3/*.txt
+*.txt
+.DS_Store
